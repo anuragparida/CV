@@ -22,11 +22,36 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[
-	%a4paper, % Uncomment for A4 paper size (default is US letter)
-	12pt, % Default font size, can use 10pt, 11pt or 12pt
+	a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
 ]{resume} % Use the resume class
 
-\usepackage{ebgaramond} % Use the EB Garamond font
+
+% \usepackage[familydefault,light]{Chivo} %% Option 'familydefault' only if the base font of the document is to be sans serif
+% \usepackage[T1]{fontenc}
+
+
+% \usepackage[sfdefault]{inter} %% Option 'sfdefault' only if 'inter' is to be
+% % the base font of the document
+% \usepackage[T1]{fontenc}
+
+
+% \usepackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
+% %% only if the base font of the document is to be sans serif
+% \usepackage[T1]{fontenc}
+% \renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+% \usepackage{nunito}
+% \usepackage[T1]{fontenc}
+
+
+% \usepackage[default,oldstyle,scale=0.95]{opensans} %% Alternatively
+% %% use the option 'defaultsans' instead of 'default' to replace the
+% %% sans serif font only.
+% \usepackage[T1]{fontenc}
+
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
 
 %------------------------------------------------
 
@@ -53,7 +78,7 @@
 
 	\textbf{Technische Hochschule Würzburg Schweinfurt} \hfill \textit{Expected: 2025} \\
 	Bachelors in Robotics (English) \\
-	Member of Studierenden Vetretung \\
+	Member of Studierenden Vetretung, T.St.V Moeno Ripuaria im BDIC \\
 	Current GPA: 2.8
 
 \end{rSection}
@@ -64,32 +89,17 @@
 
 \begin{rSection}{Experience}
 
-	\begin{rSubsection}{Research Assistant}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
+	\begin{rSubsection}{Research Assistant}{October 2023 - Present}{Web Developer}{Schweinfurt, Deutschland}
 		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
 		\item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
 		\item Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
-		\item Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		\item Pellentesque auctor nisi id magna consequat JavaScript sagittis.
-		\item Aliquam at massa ipsum. Quisque bash bibendum purus convallis nulla ultrices ultricies.
 	\end{rSubsection}
 
 	%------------------------------------------------
 
-	\begin{rSubsection}{Zepto (KiranaKart, YC)}{December 2009 - October 2010}{Lead Developer}{Austin, TX}
+	\begin{rSubsection}{Zepto (KiranaKart, YC)}{ - October 2010}{Lead Developer}{Austin, TX}
 		\item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
 		\item Curabitur dapibus enim sit amet elit pharetra tincidunt website feugiat nisl imperdiet. Ut convallis AJAX libero in urna ultrices accumsan.
-		\item Cum sociis natoque penatibus et magnis dis MySQL parturient montes, nascetur ridiculus mus.
-		\item In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
-		\item Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper.
-	\end{rSubsection}
-
-	%------------------------------------------------
-
-	\begin{rSubsection}{Google}{January 2008 - April 2010}{Web Designer \& Developer}{Gainesville, GA}
-		\item Vivamus PostgreSQL fermentum semper porta. Nunc diam velit PHP, adipiscing ut tristique vitae
-		\item Maecenas convallis ullamcorper ultricies stylesheets.
-		\item Quisque mi metus, unit tests CSS ornare sit amet fermentum et, tincidunt et orci.
-		\item Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id
 	\end{rSubsection}
 
 \end{rSection}
@@ -98,13 +108,13 @@
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Strengths}
+\begin{rSection}{Skills}
 
 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
 		Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
 		Protocols \& APIs  & XML, JSON, SOAP, REST                    \\
-		Databases          & MySQL, PostgreSQL, Microsoft SQL         \\
-		Tools              & SVN, Vim, Emacs
+		Databases/Tools    & MySQL, PostgreSQL, Microsoft SQL         \\
+		Soft Skills        & SVN, Vim, Emacs
 	\end{tabular}
 
 \end{rSection}
@@ -115,15 +125,46 @@
 
 \begin{rSection}{Languages}
 
-	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-		English    & Native (C2)       \\
-		German     & Intermediate (B1) \\
-		Hindi/Urdu & Native            \\
-		Odia       & Mothertongue
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{\hspace{6ex}} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		English    & Native (C2) & English & Native (C2)  \\
+		Hindi/Urdu & Native      & Odia    & Mothertongue \\
 	\end{tabular}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
+
+\begin{rSection}{Honors and Awards}
+
+	\begin{achSubsection}{Google Code in Winner + Mentor for Google Summer of Code}{October 2010 - Present}
+		\item Flew to Google HQ to meet with other winners and mentors from around the world.
+	\end{achSubsection}
+
+	%------------------------------------------------
+
+	\begin{achSubsection}{Winner at the CBSE National Science Fair}{December 2009 - October 2010}
+		\item Project
+	\end{achSubsection}
+
+	%------------------------------------------------
+
+	\begin{achSubsection}{Grand Finalist at HackHarvard MLH by Alibaba Tianchi}{December 2009 - October 2010}
+		\item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
+	\end{achSubsection}z
+
+	%------------------------------------------------
+
+	\begin{achSubsection}{International Olympiad in Linguistics Camp by Microsoft}{December 2009 - October 2010}
+		\item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
+	\end{achSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Hobbies}
+
+	dada
+
+
+\end{rSection}
 
 \end{document}

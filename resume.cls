@@ -85,19 +85,19 @@
 
 % \printaddress is used to style an address line (provided in the single parameter to the command)
 \newcommand{\printaddress}[1]{
-	\begingroup
-		\def \\ {\addressSep\ } % Redefine newlines (\\) to the address separator symbol so multiple lines of each address are output as a single line
-		\centerline{#1} % Output the centered address line
-	\endgroup
-	\par % End the paragraph to ensure correct spacing between lines
-	\smallskip % Vertical whitespace between address lines
+\begingroup
+\def \\ {\addressSep\ } % Redefine newlines (\\) to the address separator symbol so multiple lines of each address are output as a single line
+\centerline{#1} % Output the centered address line
+\endgroup
+\par % End the paragraph to ensure correct spacing between lines
+\smallskip % Vertical whitespace between address lines
 }
 
 % \printname is used to output the user's name in a large size
 \newcommand{\printname}{
 	\begingroup
-		\hfil{\MakeUppercase{\huge\bfseries\name}}\hfil % Style and output the user's name
-		\bigskip\break % Vertical whitespace below name
+	\hfil{\MakeUppercase{\huge\bfseries\name}}\hfil % Style and output the user's name
+	\bigskip\break % Vertical whitespace below name
 	\endgroup
 }
 
@@ -125,10 +125,10 @@
 	\medskip % Vertical whitespace
 	\hrule % Horizontal rule
 	\begin{list}{}{ % List to indent the entire content of the section
-		\setlength{\leftmargin}{1.5em} % Indent to the left of the list
-	}
-	\item[] % Empty list item to enable indentation
-}{
+			\setlength{\leftmargin}{1.5em} % Indent to the left of the list
+		}
+		\item[] % Empty list item to enable indentation
+		      }{
 	\end{list}
 }
 
@@ -145,7 +145,17 @@
 	\smallskip % Vertical whitespace
 	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
-}{
+		}{
+	\end{list}
+	\vspace{0.5em} % Vertical whitespace after the end of the list
+}
+
+\newenvironment{achSubsection}[2]{
+	\textbf{#1} \hfill {#2} % Bold company name and date to the right
+
+	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
+		}{
 	\end{list}
 	\vspace{0.5em} % Vertical whitespace after the end of the list
 }
