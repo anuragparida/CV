@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1715227316 "d:/Work/CV/template.tex" "template.pdf" "template" 1715227317 0
+["pdflatex"] 1715287614 "d:/Work/CV/template.tex" "template.pdf" "template" 1715287615 0
   "c:/Users/anura/.texlive2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1702380033 8217929 c2cfe3b3f19bfa49466d2b43095b2c0a ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1702377128 3021 665788e9679767ade2a71155215d25e0 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1702373559 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -67,10 +67,10 @@
   "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1702371054 41009 84b61f42d16d06bedb915f57aa2374cf ""
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1702378604 4754915 f164c5801f6387d9d51285b36c40995c ""
   "c:/texlive/2023/texmf.cnf" 1702378580 713 e69b156964470283e0530f5060668171 ""
-  "d:/Work/CV/template.tex" 1715227315 6124 0d7a430bb8cee06603cdc7d03a17ec32 ""
+  "d:/Work/CV/template.tex" 1715287613 6913 b0ca5152ae991884b64734362337b6c0 ""
   "resume.cls" 1715227313 6476 3c5863077a85ff1daf875c4d6330d4be ""
-  "template.aux" 1715227317 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "template.tex" 1715227315 6124 0d7a430bb8cee06603cdc7d03a17ec32 ""
+  "template.aux" 1715287615 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "template.tex" 1715287613 6913 b0ca5152ae991884b64734362337b6c0 ""
   (generated)
   "template.aux"
   "template.log"
