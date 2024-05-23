@@ -1,18 +1,18 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.12)  18 MAY 2024 21:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.12)  18 MAY 2024 22:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Work/CV/template.tex
-(d:/Work/CV/template.tex
+**d:/Work/CV/german.tex
+(d:/Work/CV/german.tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
 (./resume.cls
 Document Class: resume 2022/12/17 v3.0 Resume class
 (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(c:/texlive/2023/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(c:/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count187
 \c@section=\count188
@@ -240,13 +240,13 @@ File: T1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for T1/Sourc
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
 (Font)              `T1/SourceSansPro-TLF/regular/n' on input line 112.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 10.95pt on input line 112.
+(Font)              scaled to size 10.0pt on input line 112.
 ) (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count266
 \l__pdf_internal_box=\box53
-) (./template.aux)
-\openout1 = `template.aux'.
+) (./german.aux)
+\openout1 = `german.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
@@ -321,12 +321,12 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \topmargin=-65.90756pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=50.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -345,11 +345,9 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
 (Font)              scaled to size 20.74pt on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 71.
+(Font)              <7> on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 71.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 71.
+(Font)              <5> on input line 71.
 
 Overfull \hbox (30.0pt too wide) in paragraph at lines 71--71
 [] 
@@ -358,34 +356,39 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 71--71
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
 (Font)              `T1/SourceSansPro-TLF/bold/n' on input line 77.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 10.95pt on input line 77.
+(Font)              scaled to size 10.0pt on input line 77.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
 (Font)              `T1/SourceSansPro-TLF/regular/it' on input line 79.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 10.95pt on input line 79.
+(Font)              scaled to size 10.0pt on input line 79.
 
 Underfull \hbox (badness 10000) in paragraph at lines 79--82
 
  []
 
+
+Overfull \hbox (2.27806pt too wide) in paragraph at lines 140--141
+[]\T1/SourceSansPro-TLF/regular/n/10 Wurde unter 54 Gewin-nern von 1800 Teil-nehmern für den jährlichen Pro-gram-mier-wet-tbe-werb von Google für Schüler
+ []
+
 [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc}] (./template.aux)
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc}] (./german.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3771 strings out of 474174
- 62064 string characters out of 5749676
+ 3755 strings out of 474174
+ 61838 string characters out of 5749676
  1937460 words of memory out of 5000000
- 26014 multiletter control sequences out of 15000+600000
- 608484 words of font info for 55 fonts, out of 8000000 for 9000
+ 26004 multiletter control sequences out of 15000+600000
+ 605739 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,6n,79p,513b,183s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,79p,511b,183s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb><c:/texlive/2023/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on template.pdf (1 page, 184146 bytes).
+Output written on german.pdf (1 page, 184252 bytes).
 PDF statistics:
  29 PDF objects out of 1000 (max. 8388607)
  17 compressed objects within 1 object stream
