@@ -69,6 +69,9 @@
 \let \@addressone \relax
 \let \@addresstwo \relax
 \let \@addressthree \relax
+\let \@linkone \relax
+\let \@linktwo \relax
+\let \@linkthree \relax
 
 % The \address command is used to set the first, second and third address lines (the last 2 are optional)
 \newcommand{\address}[1]{
@@ -83,20 +86,33 @@
 	}
 }
 
+\newcommand{\link}[1]{
+	\@ifundefined{@linkone}{ % If the first address line has not been set yet, set it
+		\def \@linkone {#1}
+	}{
+		\@ifundefined{@linktwo}{ % If the second address line has not been set yet, set it
+			\def \@linktwo {#1}
+		}{ % Otherwise, set the third address line
+			\def \@linkthree {#1}
+		}%
+	}
+}
+
 % \printaddress is used to style an address line (provided in the single parameter to the command)
 \newcommand{\printaddress}[1]{
 \begingroup
 \def \\ {\addressSep\ } % Redefine newlines (\\) to the address separator symbol so multiple lines of each address are output as a single line
-\centerline{#1} % Output the centered address line
+\leftline{#1} % Output the centered address line
+%\centerline{#1}
 \endgroup
 \par % End the paragraph to ensure correct spacing between lines
-\smallskip % Vertical whitespace between address lines
+%\smallskip % Vertical whitespace between address lines
 }
 
 % \printname is used to output the user's name in a large size
 \newcommand{\printname}{
 	\begingroup
-	\hfil{\MakeUppercase{\huge\bfseries\name}}\hfil % Style and output the user's name
+	\leftline{\MakeUppercase{\Huge\bfseries\name}}\leftline % Style and output the user's name % we used hfil before
 	\bigskip\break % Vertical whitespace below name
 	\endgroup
 }
@@ -108,10 +124,21 @@
 \let\ori@document=\document % Store the original \document command
 \renewcommand{\document}{
 	\ori@document  % Output the original \document command but add to it below
+        \noindent
+        \begin{minipage}[t][\height][b]{0.7\textwidth} % Left-aligned name and address in a minipage
 	\printname % Output the user's name
-	\@ifundefined{@addressone}{}{\printaddress{\@addressone}} % Output the first address if specified
-	\@ifundefined{@addresstwo}{}{\printaddress{\@addresstwo}} % Output the second address if specified
-	\@ifundefined{@addressthree}{}{\printaddress{\@addressthree}} % Output the third address if specified
+    	\@ifundefined{@addressone}{}{\printaddress{\@addressone}} % Output the first address if specified
+    	\@ifundefined{@addresstwo}{}{\printaddress{\@addresstwo}} % Output the second address if specified
+            \@ifundefined{@addressthree}{}{\printaddress{\@addressthree}} % Output the second address if specified
+    	\@ifundefined{@linkone}{}         {\bigskip\printaddress{\@linkone}} % Output the first link  if specified
+            \@ifundefined{@linktwo}{}{\printaddress{\@linktwo}} % Output the first link  if specified
+            \@ifundefined{@linktwo}{}{\printaddress{\@linkthree}} % Output the first link  if specified
+        \end{minipage}%
+        \begin{minipage}[t][\height][b]{0.3\textwidth} % Right-aligned image in a minipage
+		\begin{flushright}
+			\includegraphics[height=4cm]{file.jpg} % Adjust the image path and size
+		\end{flushright}
+	\end{minipage}
 }
 
 %----------------------------------------------------------------------------------------
@@ -120,7 +147,7 @@
 
 % Defines the rSection environment for the major sections within the CV
 \newenvironment{rSection}[1]{ % The single parameter is for the section title
-	\medskip % Vertical whitespace
+	\smallskip % Vertical whitespace
 	\MakeUppercase{\textbf{#1}} % Section title
 	\medskip % Vertical whitespace
 	\hrule % Horizontal rule
