@@ -136,7 +136,7 @@
         \end{minipage}%
         \begin{minipage}[t][\height][b]{0.3\textwidth} % Right-aligned image in a minipage
 		\begin{flushright}
-			\includegraphics[height=4cm]{file.jpg} % Adjust the image path and size
+			\includegraphics[height=3.7cm]{file.jpg} % Adjust the image path and size
 		\end{flushright}
 	\end{minipage}
 }
