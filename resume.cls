@@ -112,7 +112,7 @@
 % \printname is used to output the user's name in a large size
 \newcommand{\printname}{
 	\begingroup
-	\leftline{\MakeUppercase{\huge\bfseries\name}} % Style and output the user's name
+	\leftline{\MakeUppercase{\LARGE\bfseries\name}} % Style and output the user's name
 	\medskip
 	\endgroup
 }
@@ -128,16 +128,16 @@
 	\begin{minipage}[t][\height][b]{0.7\textwidth} % Left-aligned name and address in a minipage
 		\printname % Output the user's name
 		\@ifundefined{@addressone}{}{\printaddress{\@addressone}} % Output the first address if specified
-		\@ifundefined{@addresstwo}{}{\printaddress{\@addresstwo}} % Output the second address if specified
+		\@ifundefined{@addresstwo}{}{\medskip\printaddress{\@addresstwo}} % Output the second address if specified
 		\@ifundefined{@addressthree}{}{\printaddress{\@addressthree}} % Output the third address if specified
 		% Reduce gap between addresses and links by removing \bigskip and using \smallskip
-		\@ifundefined{@linkone}{}         {\medskip\printaddress{\@linkone}} % Output the first link if specified
+		\@ifundefined{@linkone}{}         {\smallskip\printaddress{\@linkone}} % Output the first link if specified
 		\@ifundefined{@linktwo}{}{\printaddress{\@linktwo}} % Output the second link if specified
 		\@ifundefined{@linkthree}{}{\printaddress{\@linkthree}} % Output the third link if specified
 	\end{minipage}%
 	\begin{minipage}[t][\height][b]{0.3\textwidth} % Right-aligned image in a minipage
 		\begin{flushright}
-			\includegraphics[height=3cm]{file.jpg} % Adjust the image path and size
+			\includegraphics[height=3cm]{finalPictureCompressed.jpg} % Adjust the image path and size
 		\end{flushright}
 	\end{minipage}
 }
