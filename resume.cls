@@ -112,8 +112,8 @@
 % \printname is used to output the user's name in a large size
 \newcommand{\printname}{
 	\begingroup
-	\leftline{\MakeUppercase{\Huge\bfseries\name}}\leftline % Style and output the user's name % we used hfil before
-	\bigskip\break % Vertical whitespace below name
+	\leftline{\MakeUppercase{\huge\bfseries\name}} % Style and output the user's name
+	\medskip
 	\endgroup
 }
 
@@ -124,19 +124,20 @@
 \let\ori@document=\document % Store the original \document command
 \renewcommand{\document}{
 	\ori@document  % Output the original \document command but add to it below
-        \noindent
-        \begin{minipage}[t][\height][b]{0.7\textwidth} % Left-aligned name and address in a minipage
-	\printname % Output the user's name
-    	\@ifundefined{@addressone}{}{\printaddress{\@addressone}} % Output the first address if specified
-    	\@ifundefined{@addresstwo}{}{\printaddress{\@addresstwo}} % Output the second address if specified
-            \@ifundefined{@addressthree}{}{\printaddress{\@addressthree}} % Output the second address if specified
-    	\@ifundefined{@linkone}{}         {\bigskip\printaddress{\@linkone}} % Output the first link  if specified
-            \@ifundefined{@linktwo}{}{\printaddress{\@linktwo}} % Output the first link  if specified
-            \@ifundefined{@linktwo}{}{\printaddress{\@linkthree}} % Output the first link  if specified
-        \end{minipage}%
-        \begin{minipage}[t][\height][b]{0.3\textwidth} % Right-aligned image in a minipage
+	\noindent
+	\begin{minipage}[t][\height][b]{0.7\textwidth} % Left-aligned name and address in a minipage
+		\printname % Output the user's name
+		\@ifundefined{@addressone}{}{\printaddress{\@addressone}} % Output the first address if specified
+		\@ifundefined{@addresstwo}{}{\printaddress{\@addresstwo}} % Output the second address if specified
+		\@ifundefined{@addressthree}{}{\printaddress{\@addressthree}} % Output the third address if specified
+		% Reduce gap between addresses and links by removing \bigskip and using \smallskip
+		\@ifundefined{@linkone}{}         {\medskip\printaddress{\@linkone}} % Output the first link if specified
+		\@ifundefined{@linktwo}{}{\printaddress{\@linktwo}} % Output the second link if specified
+		\@ifundefined{@linkthree}{}{\printaddress{\@linkthree}} % Output the third link if specified
+	\end{minipage}%
+	\begin{minipage}[t][\height][b]{0.3\textwidth} % Right-aligned image in a minipage
 		\begin{flushright}
-			\includegraphics[height=3.7cm]{file.jpg} % Adjust the image path and size
+			\includegraphics[height=3cm]{file.jpg} % Adjust the image path and size
 		\end{flushright}
 	\end{minipage}
 }
@@ -147,7 +148,7 @@
 
 % Defines the rSection environment for the major sections within the CV
 \newenvironment{rSection}[1]{ % The single parameter is for the section title
-	\smallskip % Vertical whitespace
+	% \smallskip % Vertical whitespace
 	\MakeUppercase{\textbf{#1}} % Section title
 	\medskip % Vertical whitespace
 	\hrule % Horizontal rule
@@ -174,7 +175,7 @@
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
 		}{
 	\end{list}
-	\vspace{0.5em} % Vertical whitespace after the end of the list
+	% \vspace{0.5em} % Vertical whitespace after the end of the list
 }
 
 \newenvironment{achSubsection}[2]{
